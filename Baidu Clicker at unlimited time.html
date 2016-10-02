@@ -1,0 +1,107 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>Baidu Clicker at unlimited time.sikuli</h2> <a href="Baidu Clicker at unlimited time.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> datetime <span class="kw">import</span> datetime, date, time
+<span class="cmt">#print datetime.strftime(datetime.now(), '%Y-%m-%d %H:%M:%S')</span>
+
+<span class="cmt">#Change to your target starting time!</span>
+<span class="cmt">#default starttime = '05:01:07'</span>
+<span class="cmt">#default endtime = '07:55:00'</span>
+starttime = <span class="str">'05:01:07'</span>
+endtime = <span class="str">'07:55:00'</span>
+<span class="cmt">#</span>
+<span class="kw">while</span> <span class="dig">1</span> == <span class="dig">1</span>:
+    currenttime = datetime.strftime(datetime.now(), <span class="str">'%H:%M:%S'</span>)
+    <span class="kw">if</span> currenttime == starttime:
+        <span class="cmt">#print 'Start!'</span>
+        <span class="kw">for</span> _ <span class="kw">in</span> range(<span class="dig">8</span>):
+            <span class="skw">click</span>(<img src="1475289044279.png" />)
+            <span class="skw">sleep</span>(<span class="dig">0.7</span>)
+        <span class="kw">break</span>
+    <span class="kw">else</span>:
+        <span class="kw">pass</span>
+<span class="cmt">#</span>
+<span class="kw">while</span> <span class="dig">1</span>==<span class="dig">1</span>:
+    currenttime = datetime.strftime(datetime.now(), <span class="str">'%H:%M:%S'</span>)
+    <span class="kw">if</span> currenttime == endtime:
+        <span class="kw">for</span> _ <span class="kw">in</span> range(<span class="dig">8</span>):
+            <span class="skw">click</span>(<img src="1475369596012.png" />)
+            <span class="skw">sleep</span>(<span class="dig">0.7</span>)
+        <span class="kw">break</span>
+    <span class="kw">else</span>:
+        <span class="kw">pass</span>
+<span class="cmt">#</span>
+<span class="kw">print</span> <span class="str">'Todays downloading task, COMPLETED! At'</span>
+<span class="kw">print</span> datetime.strftime(datetime.now(), <span class="str">'%Y-%m-%d %H:%M:%S'</span>)
+</pre>
+</body>
+</html>
